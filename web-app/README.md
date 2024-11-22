@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next-Payload Enterprise Stack
 
-## Getting Started
+## Vue d'ensemble
 
-First, run the development server:
+Next-Payload Latest Version  Enterprise Stack est une solution complète et robuste pour le développement d'applications web modernes. Ce projet combine la puissance de Next.js 15 avec React-19 pour le frontend et Payload CMS 3 pour la gestion de contenu, offrant une base solide pour des applications d'entreprise évolutives.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Caractéristiques
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend Next.js** : Utilise l'App Router pour un routage optimisé
+- **Payload CMS** : CMS headless puissant et flexible
+- **TypeScript** : Typage statique pour un code plus sûr et maintenable
+- **Tailwind CSS** : Utilitaire CSS pour un design rapide et réactif
+- **Stripe** : Intégration pour les paiements en ligne
+- **Vercel** : Configuration de déploiement optimisée
+- **Tests** : Vitest, Playwright, et Jest pour des tests complets
+- **Storybook** : Documentation des composants et développement isolé
+- **Sentry** : Surveillance des erreurs en production
+- **State Management** : Zustand pour une gestion d'état simple et efficace
+- **Base de données** : Intégration avec Supabase
+- **Animations** : Framer Motion et Lottie pour des animations fluides
+- **Et plus encore** : ESLint, Axios, class-variance-authority, etc.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Prérequis
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js (version 18 ou supérieure)
+- npm ou yarn
+- Git
+- Bun (After)
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clonez le repository :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Installez les dépendances :
 
-## Deploy on Vercel
+   ```
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ou
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```
+   yarn install
+   ```
+
+3. Configurez les variables d'environnement :
+   Copiez le fichier `.env.example` en `.env` et remplissez les variables nécessaires.
+
+4. Lancez le projet en mode développement :
+   ```
+   npm run dev
+   ```
+   ou
+   ```
+   yarn dev
+   ```
+
+## Scripts disponibles
+
+- `npm run dev` : Lance le projet en mode développement
+- `npm run build` : Compile le projet pour la production
+- `npm run start` : Démarre le projet en mode production
+- `npm run test` : Exécute les tests
+- `npm run storybook` : Lance Storybook pour le développement de composants
+
+## Contribution
+
+Les contributions sont les bienvenues ! Veuillez consulter notre guide de contribution pour plus de détails.
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## Support
+
+Si vous rencontrez des problèmes ou avez des questions, n'hésitez pas à ouvrir une issue sur GitHub.
+
+---
+
+Développé avec ❤️ par l'équipe NextStacksForge

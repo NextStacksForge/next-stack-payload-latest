@@ -4,5 +4,17 @@
     "plugin:react-hooks/recommended",
     "next/typescript",
     "plugin:storybook/recommended"
-  ]
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": false,
+        "printWidth": 120,
+        "tabWidth": 2
+      }
+    ]
+  }
 }
