@@ -1,16 +1,28 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Inter } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/SF-Pro-Text-RegularItalic.otf",
-  variable: "--font-geist-sans",
+const sfProTextRegular = localFont({
+  src: "./fonts/SF-Pro-Text-Regular.otf",
+  variable: "--font-sf-pro-text-regular",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/SF-Pro-Display-Black.otf",
-  variable: "--font-geist-mono",
+const sfProTextItalic = localFont({
+  src: "./fonts/SF-Pro-Text-RegularItalic.otf",
+  variable: "--font-sf-pro-text-italic",
   weight: "100 900",
+});
+
+const sfPro = localFont({
+  src: "./fonts/SF-Pro.ttf",
+  variable: "--font-sf-pro",
+  weight: "100 900",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sfProTextRegular.variable} ${sfProTextItalic.variable} ${sfPro.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
