@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       new_tag: ${{ steps.taggerDev.outputs.new_tag }}
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
